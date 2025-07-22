@@ -1,0 +1,50 @@
+\documentclass{main}
+
+\begin{document}
+
+
+\begin{equation}
+\begin{cases}
+    \sup\limits_{w,b} \sum\limits_{i=1}^n \inf\limits_{j \in \mathcal{J}_i} \left[ w^\top X_{ij} + b \right] \\
+    \text{s.t.} \quad \|w\|_2 \leq \Lambda, \quad b \in \mathbb{R}
+\end{cases}    
+\end{equation} 
+
+
+
+\begin{equation}
+    ref=(\vec{\eta}) 
+\end{equation} 
+
+
+
+随机事件X ($X \in \mathcal{F}$)的\textbf{信息量} := $I(X)$ := $-\log_{2}{P(X)}$ := 随机事件X发生的不确定性的大小 := 随机事件X发生后的信息量的大小 \\
+
+
+
+随机事件X($X \in \mathcal{F}$)的总体的\textbf{信息熵} := $H(X)$ := $E_{X \sim P}(I(X))$ := $-E_{X \sim P}(\log_{2}X) := -\sum_{X}P(X)\log_{2}X $ := $-\int_{X}P(X)\log_{2}P(X)\,dx$ := 随机事件X的总体的信息量的期望值 \\
+
+
+
+\textbf{概率空间}是一个三元组($\Omega, \mathcal{F}, P$)，其中：
+
+1.\textbf{样本空间}$\Omega$，表示所有可能结果的集合，通常记作$\Omega$。
+
+2.\textbf{事件空间}$\mathcal{F}$，Sigma-Algebra，是$\Omega$的某些子集构成的集合。满足以下条件：
+
+\ding{172} $\Omega \in \mathcal{F}$（必然事件包含在内）；
+
+\ding{173} 如果$A \in \mathcal{F}$，那么$A^{c} \in \mathcal{F}$（补集封闭性）；
+
+\ding{174}如果 $A_{1}, A_{2}$， $\dots \in \mathcal{F}$，那么 $\bigcup_{i=1}^{\infty} A_{i} \in \mathcal{F}$
+
+3.\textbf{概率测度}$P$，是一个函数$ P: \mathcal{F} \to [0,1]$，满足：
+
+\ding{172} $P(\Omega) = 1$（必然事件的概率为1）；
+
+\ding{173} 如果 $A_{1}, A_{2}, \dots$是互不相交的事件（即 $A_{i} \cap A_{j} = \emptyset$ 当 $i \neq j $），那么：$P\left(\bigcup_{i=1}^{\infty} A_{i}\right) = \sum_{i=1}^{\infty} P\left(A_{i}\right)$ (可列可加性，Countable Additivity)
+
+
+
+
+\end{document}
