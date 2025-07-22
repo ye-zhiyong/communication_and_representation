@@ -1,0 +1,25 @@
+
+\begin{englishabstract}
+
+Road crack detection is an important part of highway maintenance and driving safety.
+Up to now, the road crack detection system still has the following problems: 
+1) The models are getting bigger and bigger, which reduces the detection speed and efficiency.
+2) Most models are deployed in the cloud, which has problems such as communication delay, low efficiency, instability, and overload of the central server.
+
+Aiming at the dual requirements of accuracy and speed in crack detection engineering applications, this paper designs and implements a crack detection system based on edge intelligence based on U-Net convolutional network and its end-side deployment.
+The research contents are as follows:
+1) Design and implement a detection algorithm based on U-Net convolutional network, and use data augmentation technology to complete model parameter training, effectively improving the detection accuracy. 
+Experiments show that the F1 score is improved to about 0.93 after data augmentation, verifying the effectiveness of the algorithm for crack detection.
+2) Based on the trained U-Net model, the model parameter quantization from float32 bits to int8 bits is realized, the model size is reduced to 1/4 of the original, and the inference speed is improved. 
+Experimental results show that the cosine similarity of the inference results before and after model quantization exceeds 0.99, and the accuracy loss is minimal.
+3) Based on the quantized U-Net model, the model deployment and real-time detection of crack are completed on the low-cost, low-power edge chip Hi3516DV300.
+System performance testing shows that the crack detection function is normal and the inference speed is close to 0.5 seconds per frame, achieving a good balance between accuracy and speed, verifying the feasibility of deploying the crack detection algorithm on the edge system.
+
+This edge intelligent crack detection system not only effectively avoids communication delay and improves stability;
+but also effectively reduces the burden on the central server and reduces the system cost, providing a reference for the industrial application of crack detection.   
+
+\englishkeyword{Edge intelligence;Crack detection;Deep learning;CNN;U-Net}
+
+\end{englishabstract}
+
+
